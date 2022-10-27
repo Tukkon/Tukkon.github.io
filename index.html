@@ -67,9 +67,9 @@
             <td colspan="3" class="header">Welcome to Better Boy!</td>
         </tr>
         <tr>
-            <td onclick="random()" class="tovch" id="name"></td>
-            <td onclick="random()" class="button">Which one would you choose?</td>          
-            <td onclick="random()" class="tovch" id="names"></td>
+            <td onclick="randomr()" class="tovch" id="name"></td>
+            <td onclick="random()" class="button">Click to Start</td>          
+            <td onclick="randoml()" class="tovch" id="names"></td>
         </tr>
     </table>
     <div style="text-align: center; color:rgb(193, 234, 234)">
@@ -77,9 +77,23 @@
     </div>
 </body>
 <script>
+    let a=1
     const random = () => {
-        const names = ['tuvshindorj', 'Jamiyandorj', 'Javkhlan', 'Anand', 'Tselmegsanchir', 'Enkhtuvshin', 'Ermuun', 'Battuvshin', 'Bat Erdene', 'Bayarjavkhlan', 'Altai', 'Anar', 'Turkhishig', 'Dorjpalam', 'Egshig', 'temuulen.A', 'Khangal', 'Erkhes', 'Odbileg', 'Bilguujin', 'Bulgankhuu', 'Sodbayar', 'Temuulen.sh',]
+        if (a==1){
+        const names = ['Tuvshindorj', 'Jamiyandorj', 'Javkhlan', 'Anand', 'Tselmegsanchir', 'Enkhtuvshin', 'Ermuun', 'Battuvshin', 'Bat Erdene', 'Bayarjavkhlan', 'Altai', 'Anar', 'Turkhishig', 'Dorjpalam', 'Egshig', 'temuulen.A', 'Khangal', 'Erkhes', 'Odbileg', 'Bilguujin', 'Bulgankhuu', 'Sodbayar', 'Temuulen.sh',]
         document.getElementById("name").innerHTML = names[Math.trunc(Math.random() * 23)]
+        document.getElementById("names").innerHTML = names[Math.trunc(Math.random() * 23)]
+        a++
+        console.log(a)
+    }
+    document.getElementById("start").innerHTML="Which one would you choose?"
+}       
+    const randoml = () => {
+        const names = ['Tuvshindorj', 'Jamiyandorj', 'Javkhlan', 'Anand', 'Tselmegsanchir', 'Enkhtuvshin', 'Ermuun', 'Battuvshin', 'Bat Erdene', 'Bayarjavkhlan', 'Altai', 'Anar', 'Turkhishig', 'Dorjpalam', 'Egshig', 'temuulen.A', 'Khangal', 'Erkhes', 'Odbileg', 'Bilguujin', 'Bulgankhuu', 'Sodbayar', 'Temuulen.sh',]
+        document.getElementById("name").innerHTML = names[Math.trunc(Math.random() * 23)]
+    }
+    const randomr = () => {
+        const names = ['Tuvshindorj', 'Jamiyandorj', 'Javkhlan', 'Anand', 'Tselmegsanchir', 'Enkhtuvshin', 'Ermuun', 'Battuvshin', 'Bat Erdene', 'Bayarjavkhlan', 'Altai', 'Anar', 'Turkhishig', 'Dorjpalam', 'Egshig', 'temuulen.A', 'Khangal', 'Erkhes', 'Odbileg', 'Bilguujin', 'Bulgankhuu', 'Sodbayar', 'Temuulen.sh',]
         document.getElementById("names").innerHTML = names[Math.trunc(Math.random() * 23)]
     }
 </script>
